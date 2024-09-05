@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import QRCode from 'qrcode';
+import Padding from './padding';
 
 interface QrCodeImageProps {
   text: string;
@@ -33,8 +34,13 @@ export const QrCodeImage = ({ text }: QrCodeImageProps) => {
 
   return (
     <div>
-      <canvas ref={canvasRef} />
-      <button onClick={downloadQRCode}>QR 코드 다운로드</button>
+      <div>
+        <canvas ref={canvasRef} />
+      </div>
+      <Padding />
+      <div>
+        <button onClick={downloadQRCode}>QR 코드 다운로드</button>
+      </div>
     </div>
   );
 };
