@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { QrCodeImage } from '../components/qr';
 
 export default function Home() {
-  const [text, setText] = useState('하이');
+  const [text, setText] = useState('https://www.google.com');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
