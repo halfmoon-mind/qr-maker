@@ -1,0 +1,19 @@
+import { useState } from 'react';
+import { QrCodeImage } from '../components/qr';
+
+export default function Home() {
+  const [text, setText] = useState('하이');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setText(e.target.value);
+  };
+
+  return (
+    <div>
+      <h1>QR 코드 생성기</h1>
+      <input type="text" value={text} onChange={handleChange} placeholder="QR로 연결될 링크를 넣어보세요!" />
+      <br />
+      <QrCodeImage text={text} />
+    </div>
+  );
+}
