@@ -4,9 +4,11 @@ import Padding from './padding';
 
 interface QrCodeImageProps {
   text: string;
+  color: string;
+  backgroundColor?: string;
 }
 
-export const QrCodeImage = ({ text }: QrCodeImageProps) => {
+export const QrCodeImage = ({ text, color, backgroundColor }: QrCodeImageProps) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [imageURL, setImageURL] = useState<string | null>(null);
 
@@ -14,14 +16,14 @@ export const QrCodeImage = ({ text }: QrCodeImageProps) => {
     if (canvasRef.current) {
       // QR 코드를 생성하고 canvas에 그리기
       QRCode.toCanvas(canvasRef.current, text, {
-        color: { dark: '#000000' },
+        color: { dark: color, light: backgroundColor },
         scale: 4,
       });
       // canvas를 이미지 데이터로 변환하여 다운로드 링크용 URL 설정
       const url = canvasRef.current.toDataURL('image/png');
       setImageURL(url);
     }
-  }, [text]);
+  }, [text, color, backgroundColor]);
 
   const downloadQRCode = () => {
     if (imageURL) {
@@ -35,7 +37,7 @@ export const QrCodeImage = ({ text }: QrCodeImageProps) => {
   return (
     <div>
       <div>
-        <canvas ref={canvasRef} />
+        <canvas ref={canvasRef} style={{ color: backgroundColor }} />
       </div>
       <Padding />
       <div>
