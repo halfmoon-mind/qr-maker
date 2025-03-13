@@ -1,1 +1,33 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <!-- 애플 터치 아이콘 - 배경 -->
+  <rect width="180" height="180" rx="45" fill="#007aff" />
+  
+  <!-- QR 코드 아이콘 -->
+  <g transform="translate(40, 40) scale(1)">
+    <!-- 왼쪽 상단 파인더 패턴 -->
+    <rect x="0" y="0" width="25" height="25" fill="white" rx="6" />
+    <rect x="7" y="7" width="11" height="11" fill="#007aff" rx="3" />
+    
+    <!-- 오른쪽 상단 파인더 패턴 -->
+    <rect x="75" y="0" width="25" height="25" fill="white" rx="6" />
+    <rect x="82" y="7" width="11" height="11" fill="#007aff" rx="3" />
+    
+    <!-- 왼쪽 하단 파인더 패턴 -->
+    <rect x="0" y="75" width="25" height="25" fill="white" rx="6" />
+    <rect x="7" y="82" width="11" height="11" fill="#007aff" rx="3" />
+    
+    <!-- 기타 QR 코드 요소들 -->
+    <rect x="37.5" y="0" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="37.5" y="25" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="37.5" y="50" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="37.5" y="75" width="12.5" height="12.5" fill="white" rx="3" />
+    
+    <rect x="75" y="37.5" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="87.5" y="50" width="12.5" height="12.5" fill="white" rx="3" />
+    
+    <rect x="0" y="37.5" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="62.5" y="62.5" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="87.5" y="75" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="75" y="87.5" width="12.5" height="12.5" fill="white" rx="3" />
+  </g>
+</svg> 

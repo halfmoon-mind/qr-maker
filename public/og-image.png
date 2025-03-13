@@ -1,1 +1,46 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- 배경 -->
+  <rect width="1200" height="630" fill="#f5f5f7" />
+  <rect x="0" y="0" width="1200" height="10" fill="#007aff" />
+  
+  <!-- 콘텐츠 컨테이너 -->
+  <rect x="60" y="120" width="1080" height="390" rx="20" fill="white" stroke="#e6e6e6" stroke-width="1" />
+  
+  <!-- QR 코드 아이콘 -->
+  <g transform="translate(140, 165) scale(2)">
+    <!-- 왼쪽 상단 파인더 패턴 -->
+    <rect x="0" y="0" width="25" height="25" fill="#007aff" rx="6" />
+    <rect x="7" y="7" width="11" height="11" fill="white" rx="3" />
+    
+    <!-- 오른쪽 상단 파인더 패턴 -->
+    <rect x="75" y="0" width="25" height="25" fill="#007aff" rx="6" />
+    <rect x="82" y="7" width="11" height="11" fill="white" rx="3" />
+    
+    <!-- 왼쪽 하단 파인더 패턴 -->
+    <rect x="0" y="75" width="25" height="25" fill="#007aff" rx="6" />
+    <rect x="7" y="82" width="11" height="11" fill="white" rx="3" />
+    
+    <!-- 기타 QR 코드 요소들 -->
+    <rect x="37.5" y="0" width="12.5" height="12.5" fill="#007aff" rx="3" />
+    <rect x="37.5" y="25" width="12.5" height="12.5" fill="#007aff" rx="3" />
+    <rect x="37.5" y="50" width="12.5" height="12.5" fill="#007aff" rx="3" />
+    <rect x="37.5" y="75" width="12.5" height="12.5" fill="#007aff" rx="3" />
+    
+    <rect x="75" y="37.5" width="12.5" height="12.5" fill="#007aff" rx="3" />
+    <rect x="87.5" y="50" width="12.5" height="12.5" fill="#007aff" rx="3" />
+    
+    <rect x="0" y="37.5" width="12.5" height="12.5" fill="#007aff" rx="3" />
+    <rect x="62.5" y="62.5" width="12.5" height="12.5" fill="#007aff" rx="3" />
+    <rect x="87.5" y="75" width="12.5" height="12.5" fill="#007aff" rx="3" />
+    <rect x="75" y="87.5" width="12.5" height="12.5" fill="#007aff" rx="3" />
+  </g>
+  
+  <!-- 앱 설명 텍스트 -->
+  <text x="400" y="240" font-family="-apple-system, BlinkMacSystemFont, 'San Francisco Pro', 'Helvetica Neue', Arial, sans-serif" font-size="64" fill="#1d1d1f" font-weight="700">QR 코드 생성기</text>
+  <text x="400" y="320" font-family="-apple-system, BlinkMacSystemFont, 'San Francisco Pro', 'Helvetica Neue', Arial, sans-serif" font-size="32" fill="#86868b" font-weight="400">손쉽게 나만의 QR코드를</text>
+  <text x="400" y="360" font-family="-apple-system, BlinkMacSystemFont, 'San Francisco Pro', 'Helvetica Neue', Arial, sans-serif" font-size="32" fill="#86868b" font-weight="400">무료로 만들고 다운로드하세요</text>
+  
+  <!-- 호출 버튼 -->
+  <rect x="400" y="400" width="260" height="60" rx="30" fill="#007aff" />
+  <text x="530" y="440" font-family="-apple-system, BlinkMacSystemFont, 'San Francisco Pro', 'Helvetica Neue', Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="600">지금 시작하기</text>
+</svg> 

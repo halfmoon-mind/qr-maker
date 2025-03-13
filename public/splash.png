@@ -1,1 +1,36 @@
- 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2732 2732" width="2732" height="2732">
+  <!-- 애플 스플래시 화면 - 아이패드 프로 12.9인치 크기 -->
+  <rect width="2732" height="2732" fill="#007aff" />
+  
+  <!-- 중앙에 큰 QR 코드 아이콘 -->
+  <g transform="translate(1016, 1016) scale(7)">
+    <!-- 왼쪽 상단 파인더 패턴 -->
+    <rect x="0" y="0" width="25" height="25" fill="white" rx="6" />
+    <rect x="7" y="7" width="11" height="11" fill="#007aff" rx="3" />
+    
+    <!-- 오른쪽 상단 파인더 패턴 -->
+    <rect x="75" y="0" width="25" height="25" fill="white" rx="6" />
+    <rect x="82" y="7" width="11" height="11" fill="#007aff" rx="3" />
+    
+    <!-- 왼쪽 하단 파인더 패턴 -->
+    <rect x="0" y="75" width="25" height="25" fill="white" rx="6" />
+    <rect x="7" y="82" width="11" height="11" fill="#007aff" rx="3" />
+    
+    <!-- 기타 QR 코드 요소들 -->
+    <rect x="37.5" y="0" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="37.5" y="25" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="37.5" y="50" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="37.5" y="75" width="12.5" height="12.5" fill="white" rx="3" />
+    
+    <rect x="75" y="37.5" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="87.5" y="50" width="12.5" height="12.5" fill="white" rx="3" />
+    
+    <rect x="0" y="37.5" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="62.5" y="62.5" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="87.5" y="75" width="12.5" height="12.5" fill="white" rx="3" />
+    <rect x="75" y="87.5" width="12.5" height="12.5" fill="white" rx="3" />
+  </g>
+  
+  <!-- 앱 이름 -->
+  <text x="1366" y="2000" font-family="-apple-system, BlinkMacSystemFont, 'San Francisco Pro', 'Helvetica Neue', Arial, sans-serif" font-size="80" fill="white" text-anchor="middle" font-weight="600">QR 코드 생성기</text>
+</svg> 
