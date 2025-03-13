@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <div className="container">
+    <main className="container">
       <header>
         <h1>QR 코드 생성기</h1>
         <p className="subtitle">
@@ -24,7 +24,10 @@ export default function Home() {
         </p>
       </header>
 
-      <section className="input-section">
+      <section className="input-section" aria-labelledby="input-heading">
+        <h2 id="input-heading" className="visually-hidden">
+          URL 입력
+        </h2>
         <label htmlFor="qr-input" className="input-label">
           URL 또는 텍스트 입력
         </label>
@@ -35,27 +38,44 @@ export default function Home() {
           onChange={handleTextChange}
           placeholder="링크를 넣어보세요!"
           className="text-input"
+          aria-describedby="input-description"
         />
+        <p id="input-description" className="visually-hidden">
+          입력한 텍스트나 URL로 QR코드가 생성됩니다.
+        </p>
       </section>
 
-      <section className="qr-preview">
+      <section className="qr-preview" aria-labelledby="preview-heading">
+        <h2 id="preview-heading" className="visually-hidden">
+          QR 코드 미리보기
+        </h2>
         <QrCodeImage text={text} color={color} backgroundColor="#FFFFFF" />
       </section>
 
-      <section className="color-section">
-        <h2>QR 코드 색상</h2>
-        <div className="color-picker-container">
+      <section className="color-section" aria-labelledby="color-heading">
+        <h2 id="color-heading">QR 코드 색상</h2>
+        <div
+          className="color-picker-container"
+          role="region"
+          aria-label="색상 선택기"
+        >
           <Compact onChange={handleColorChange} color={color} />
         </div>
-        <div className="current-color">
+        <div className="current-color" aria-live="polite">
           <span>선택된 색상: </span>
           <div
             className="color-preview"
             style={{ backgroundColor: color }}
+            role="img"
+            aria-label={`선택된 색상 미리보기: ${color}`}
           ></div>
           <span>{color}</span>
         </div>
       </section>
-    </div>
+
+      <footer className="app-footer">
+        <p>© {new Date().getFullYear()} QR 코드 생성기 - 모든 권리 보유</p>
+      </footer>
+    </main>
   );
 }

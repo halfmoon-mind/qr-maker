@@ -1,0 +1,40 @@
+{
+  "name": "QR 코드 생성기",
+  "short_name": "QR 생성기",
+  "description": "손쉽게 나만의 맞춤형 QR 코드를 생성하고 다운로드하세요.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007aff",
+  "orientation": "portrait",
+  "scope": "https://www.qrmaker.site/",
+  "id": "https://www.qrmaker.site/",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["utilities", "productivity"],
+  "lang": "ko-KR",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "iarc_rating_id": "",
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/svg+xml",
+      "platform": "wide",
+      "label": "QR 코드 생성기 화면"
+    }
+  ]
+}

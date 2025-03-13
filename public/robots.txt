@@ -1,2 +1,12 @@
+# QR 코드 생성기 robots.txt
+# 모든 검색 엔진 크롤러에 대한 규칙
 User-agent: *
 Allow: /
+
+# 사이트맵 위치
+Sitemap: https://www.qrmaker.site/sitemap.xml
+
+# 이미지, 스크립트, 스타일시트 등 검색 결과에 노출할 필요 없는 리소스 제외
+User-agent: *
+Disallow: /node_modules/
+Disallow: /.git/
