@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { QrCodeImage } from '../components/qr';
-import Padding from '../components/padding';
 import { ColorResult } from 'react-color';
 import Compact from 'react-color/lib/components/compact/Compact';
 
@@ -17,19 +16,46 @@ export default function Home() {
   };
 
   return (
-    <div>
-      <h1>QR 코드 생성기</h1>
-      <input
-        type="text"
-        value={text}
-        onChange={handleTextChange}
-        placeholder="링크를 넣어보세요!"
-        style={{ fontSize: '18px', padding: '10px', width: '80%' }}
-      />
-      <Padding />
-      <QrCodeImage text={text} color={color} backgroundColor="#FFFFFF" />
-      <h2>QR코드 색상 변경</h2>
-      <Compact onChange={handleColorChange} color={color} />
+    <div className="container">
+      <header>
+        <h1>QR 코드 생성기</h1>
+        <p className="subtitle">
+          텍스트나 URL을 입력하여 맞춤형 QR 코드를 만들어보세요.
+        </p>
+      </header>
+
+      <section className="input-section">
+        <label htmlFor="qr-input" className="input-label">
+          URL 또는 텍스트 입력
+        </label>
+        <input
+          id="qr-input"
+          type="text"
+          value={text}
+          onChange={handleTextChange}
+          placeholder="링크를 넣어보세요!"
+          className="text-input"
+        />
+      </section>
+
+      <section className="qr-preview">
+        <QrCodeImage text={text} color={color} backgroundColor="#FFFFFF" />
+      </section>
+
+      <section className="color-section">
+        <h2>QR 코드 색상</h2>
+        <div className="color-picker-container">
+          <Compact onChange={handleColorChange} color={color} />
+        </div>
+        <div className="current-color">
+          <span>선택된 색상: </span>
+          <div
+            className="color-preview"
+            style={{ backgroundColor: color }}
+          ></div>
+          <span>{color}</span>
+        </div>
+      </section>
     </div>
   );
 }
