@@ -1,0 +1,2 @@
+# Authorized Digital Sellers for example.com
+google.com, pub-6612953628765015, DIRECT, f08c47fec0942fa0
